@@ -36,6 +36,7 @@ static void __attribute__((constructor)) s_set_default_wifi_log_level()
     esp_log_level_set("wifi", CONFIG_LOG_DEFAULT_LEVEL);
 }
 
+// Init WiFi
 esp_err_t esp_wifi_init(const wifi_init_config_t *config)
 {
 #ifdef CONFIG_PM_ENABLE

@@ -95,6 +95,7 @@ static void tcpip_adapter_dhcps_cb(u8_t client_ip[4])
     esp_event_send(&evt);
 }
 
+// 初始化TCP/IP适配层
 void tcpip_adapter_init(void)
 {
     int ret;

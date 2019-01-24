@@ -108,6 +108,7 @@ QueueHandle_t esp_event_loop_get_queue(void)
     return s_event_queue;
 }
 
+// Initialize event loop. Create the event handler and task
 esp_err_t esp_event_loop_init(system_event_cb_t cb, void *ctx)
 {
     if (s_event_init_flag) {
